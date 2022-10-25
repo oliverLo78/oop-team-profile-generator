@@ -1,0 +1,19 @@
+{
+  "name": "oop-team-profile-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^24.0.0"
+  },
+
+  "keywords": [],
+  "author": "Oliver Lopez",
+  "license": "ISC",
+  "description": ""
+}
