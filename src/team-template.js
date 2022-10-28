@@ -6,45 +6,38 @@ const generateTeam = team => {
     // create the manager html
     const generateManager = (manager) => {
         return `
-        <div class="container-fluid"></div>
+
         <div class="container">
         <div class="row" >
-            <div class="list-group col-12 d-flex justify-content-center">
-              <h5 class="card-title">${manager.getName()}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
-                  <div class="card employee-card">ID:${manager.getId()}</div>
-    
-                  <div class="card employee-card">Email:${manager.getEmail()}
-                  <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
-                  </div>
-                  <div class="card employee-card">Office number:${manager.getOfficeNumber()}</div>
-                  <div class="card employee-card"></div>
-                </div>
+
+            <div class="card m-4 bg-primary" style="width: 19rem;">
+              <div class="card-body">
+                <h5 class="card-title">${manager.getName()}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
               </div>
-            </div>
-        </div>
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID:${manager.getId()}</li>
+                    <li class="list-group-item">Email:${manager.getEmail()}</li>
+                    <li class="list-group-item">Office number:${manager.getOfficeNumber()}</li>
+                  </ul>
+              </div>
         `;
     };
 
     // create the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div class="container-fluid"></div>
-        <div class="container">
-        <div class="row" >
-            <div class="list-group col-12 d-flex justify-content-center">
-              <h5 class="card-title">${engineer.getName()}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
-                  <div class="card employee-card">ID:${engineer.getId()}</div>
-    
-                  <div class="card employee-card">Email:${engineer.getEmail()}
-                  <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
-                  </div>
-                  <div class="card employee-card">Office number:${engineer.getOfficeNumber()}</div>
-                  <div class="card employee-card"></div>
-                </div>
-              </div>
-            </div>
+          <div class="card m-4 bg-primary" style="width: 19rem;">
+          <div class="card-body">
+            <h5 class="card-title">${engineer.getName()}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
+          </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">ID:${engineer.getId()}</li>
+              <li class="list-group-item">Email:${engineer.getEmail()}<a href="mailto: email@example.com">Send Email</a></li>
+              <li class="list-group-item">Github: ${engineer.getGithub()}<a href="https://github.com/oliverLo78" target="_blank" rel="nooponer noreferrer"></a></div>
+            </ul>
         </div>
         `;
     };
@@ -52,23 +45,20 @@ const generateTeam = team => {
     // create the html for interns
     const generateIntern = intern => {
         return `
-        <div class="container-fluid"></div>
-        <div class="container">
-        <div class="row" >
-            <div class="list-group col-12 d-flex justify-content-center">
+            
+            <div class="card m-4 bg-primary" style="width: 19rem;" >
+            <div class="card-body">
               <h5 class="card-title">${intern.getName()}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
-                  <div class="card employee-card">ID:${intern.getId()}</div>
-    
-                  <div class="card employee-card">Email:${intern.getEmail()}
-                  <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
-                  </div>
-                  <div class="card employee-card">Office number:${intern.getOfficeNumber()}</div>
-                  <div class="card employee-card"></div>
-                </div>
-              </div>
             </div>
-        </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ID: ${intern.getId()}</li>
+                  <li class="list-group-item">Email:${intern.getEmail()}
+                  <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
+                  </li>
+                  <li class="list-group-item">School: ${intern.getSchool()}</li>
+                </ul>
+            </div>
         `;
     };
 

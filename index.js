@@ -61,7 +61,7 @@ inquirer
 function buildTeam() {
     const htmlPageContent = generateHTML(teamMembers)
 
-    fs.writeFile('./dist/', htmlPageContent, (err) =>
+    fs.writeFile('team.html', htmlPageContent, (err) =>
         err ? console.log(err) : console.log('Successfully created team.html!')
     );
 }
