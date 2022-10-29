@@ -15,8 +15,8 @@ const generateTeam = team => {
 
             <div class="card m-4 bg-primary" style="width: 19rem;">
               <div class="card-body">
-                <h5 class="card-title">${manager.getName()}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
+                <h3 class="card-title">${manager.getName()}</h3>
+                <h4 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h4>
               </div>
                   
                   <ul class="list-group list-group-flush">
@@ -39,8 +39,9 @@ const generateTeam = team => {
           </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">ID:${engineer.getId()}</li>
-              <li class="list-group-item">Email:${engineer.getEmail()}<a href="mailto: email@example.com">Send Email</a></li>
-              <li class="list-group-item">Github: ${engineer.getGithub()}<a href="https://github.com/oliverLo78" target="_blank" rel="nooponer noreferrer"></a></div>
+              <li class="list-group-item">Email:${engineer.getEmail()}<a href="mailto: email@example.com"></a></li>
+              <li class="list-group-item"><a href="https://github.com/oliverLo78" target="_blank" rel="nooponer noreferrer">
+              </a>Github: ${engineer.getGithub()}</div>
             </ul>
           </div>
         `;
@@ -58,7 +59,7 @@ const generateTeam = team => {
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${intern.getId()}</li>
                 <li class="list-group-item">Email:${intern.getEmail()}
-                <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
+                <a href="mailto:email@example.com?subject=Mail from our Website"></a>
                 </li>
                 <li class="list-group-item">School: ${intern.getSchool()}</li>
               </ul>
