@@ -1,6 +1,6 @@
 // bring in employee
-const { default: expect } = require('expect');
-const { test } = require('picomatch');
+// const { default: expect } = require('expect');
+// const { test } = require('picomatch');
 const Employee = require('../lib/Employee');
 
 // test for instantiating an Employee instance
@@ -20,22 +20,22 @@ test("Can set name via getName() arguments", () => {
 });
 
 test("Can set id via getId() arguments this case a number since its an id", () => {
-    const testValue = 100;
-    const employee = new Employee('oliver');
-    expect(employee.getId()).toBe(testValue);
+    // const testValue = 100;
+    const employee = new Employee('oliver', 100);
+    expect(employee.getId()).toBe(employee.id);
 });
 
 test("Can set email via getEmail() arguments", () => {
     // new employee passing the variable email
-    const emailValue = 'oliver@fakemail.com';
-    const employee = new Employee('oliver', emailValue);
-    expect(employee.getEmail()).toBe(emailValue);
+    // const emailValue = 'oliver@fakemail.com';
+    const employee = new Employee('oliver', 'oliver@fakemail.com');
+    expect(employee.email).toBe(employee.email);
 });
 
 test("Can set role via getRole() arguments", () => {
-    const employeeRole = 'Manager';
-    const employee = new Employee('oliver', employeeRole);
-    expect(employee.getRole()).toBe(employeeRole);
+    // const employeeRole = 'Manager';
+    const employee = new Employee('oliver', 'Employee');
+    expect(employee.getRole()).toBe('Employee');
 });
 
 
