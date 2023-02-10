@@ -5,10 +5,12 @@ A Node.js CLI that takes information about a software engineering team and gener
 
   ## Description 
   This application will generate html page that displays an employee information in command line
+  
+![qrcode_drive google com](https://user-images.githubusercontent.com/109435666/218122765-6bc3aab6-9caf-4379-8164-9023b165a99a.png)
 
-  ![demo video](https://drive.google.com/file/d/1zXmW8I8GMPY_A9utLqyqci56tc_IfbOL/preview)
+![qrcode_drive google com (1)](https://user-images.githubusercontent.com/109435666/218122777-7b04b201-856e-4787-997b-12df16eca759.png)
 
-  ![test video](https://drive.google.com/file/d/1HuoSKQvjgngH0O9C5okKpkNF_7DocGFp/preview)
+ 
   
   ## Table of Contents
   * [Installation](#installation)
