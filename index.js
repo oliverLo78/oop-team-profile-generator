@@ -9,7 +9,7 @@ const path = require('path');
 const fs = require('fs');
 
 const DIST_DIR = path.resolve(__dirname, 'dist');
-const distPath = path.join(DIST_DIR, 'team.html')
+const distPath = path.join(DIST_DIR, './dist/index.html');
 
 
 const generateHTML = require('./src/generateHTML');

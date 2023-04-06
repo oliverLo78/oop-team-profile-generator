@@ -12,6 +12,7 @@ const generateTeam = team => {
 
             <div class="card m-4 bg-primary" style="width: 19rem;">
               <div class="card-body">
+      
                 <h5 class="card-title">${manager.getName()}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
               </div>
@@ -30,6 +31,7 @@ const generateTeam = team => {
         return `
           <div class="card m-4 bg-primary" style="width: 19rem;">
           <div class="card-body">
+          
             <h5 class="card-title">${engineer.getName()}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
           </div>
@@ -48,6 +50,7 @@ const generateTeam = team => {
             
             <div class="card m-4 bg-primary" style="width: 19rem;" >
             <div class="card-body">
+            
               <h5 class="card-title">${intern.getName()}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
             </div>
@@ -94,12 +97,14 @@ module.exports = team => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        
         <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         />
         <link rel="stylesheet" href="./dist/style.css">
         <title>My Team</title>
+        <script src="https://kit.fontawesome.com/7c84e92252.js" crossorigin="anonymous"></script>
     </head>
     <!-- header jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-danger">
