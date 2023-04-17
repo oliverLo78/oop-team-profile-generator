@@ -10,7 +10,11 @@ A Node.js CLI that takes information about a software engineering team and gener
   
 [Demo Video Oct 28, 2022 11_22 PM.webm](https://user-images.githubusercontent.com/109435666/218125371-3f08744f-e268-4d4e-a8a6-7fb24fc37ef1.webm)
 
-## Screenshot
+  ## Screenshots
+  
+  ![Screenshot 2023-04-17 162312](https://user-images.githubusercontent.com/109435666/232602155-0d2b4d26-4f16-4a4b-bfeb-1a7bb9b722cb.png)
+  
+  ![Screenshot 2023-04-17 162322](https://user-images.githubusercontent.com/109435666/232602247-a2440d65-5cdd-498f-bc18-7804643cff35.png)
 
   
   ## Table of Contents
