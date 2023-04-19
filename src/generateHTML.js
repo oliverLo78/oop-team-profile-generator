@@ -10,21 +10,18 @@ const generateTeam = team => {
     const generateManager = (manager) => {
         return `
 
-        <div class="container">
-        <div class="row" >
-
-            <div class="card m-4 bg-primary" style="width: 19rem;">
-              <div class="card-body">
-                <i class="fa-solid fa-glasses fa-lg"></i>
-                <h3 class="card-title">${manager.getName()}</h3>
-                <h4 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h4>
-              </div>
-                  
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">ID:${manager.getId()}</li>
-                    <li class="list-group-item">Email:${manager.getEmail()}</li>
-                    <li class="list-group-item">Office number:${manager.getOfficeNumber()}</li>
-                  </ul>
+          <div class="container">
+          <div class="row">
+          <div class="card m-4 bg-primary style="width: 18rem;">
+            <div class="card-body">
+            <h3 class="card-title">${manager.getName()}</h3>
+            <h4 class="card-subtitle"><i class="fa-solid fa-mug-hot fa-lg"></i> ${manager.getRole()}</h4>
+                      <ul class="list-group list-group-flush">
+                      <li class="list-group-item">ID:${manager.getId()}</li>
+                      <li class="list-group-item">Email:${manager.getEmail()}</li>
+                      <li class="list-group-item">Office number:${manager.getOfficeNumber()}</li>
+                      </ul>
+                </div>
               </div>
         `;
     };
@@ -32,42 +29,41 @@ const generateTeam = team => {
     // create the html for engineers
     const generateEngineer = engineer => {
         return `
-
-          <div class="card m-4 bg-primary" style="width: 19rem;">
+          <div class="row">
+          <div class="card m-4 bg-primary" style="width: 18rem;">
           <div class="card-body">
-            <i class="fa-solid fa-glasses fa-lg"></i>
-            <h5 class="card-title">${engineer.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
-          </div>
-            <ul class="list-group list-group-flush">
+            <h3 class="card-title">${engineer.getName()}</h3>
+            <h4 class="card-subtitle"><i class="fa-solid fa-glasses fa-lg"></i> ${engineer.getRole()}</h4>
+              <ul class="list-group list-group-flush">
               <li class="list-group-item">ID:${engineer.getId()}</li>
-              <li class="list-group-item">Email:${engineer.getEmail()}<a href="mailto: email@example.com"></a></li>
-              <li class="list-group-item"><a href="https://github.com/oliverLo78" target="_blank" rel="nooponer noreferrer">
-              </a>Github: ${engineer.getGithub()}</div>
-            </ul>
-          </div>
-        `;
+              <li class="list-group-item">Email:${engineer.getEmail()}<a href="mailto: email@example.com">Send Email</a></li>
+              <li class="list-group-item">Github: ${engineer.getGithub()}<a href="https://github.com/oliverLo78" target="_blank" rel="nooponer noreferrer"></a>
+              </li>
+              </ul>
+        </div>
+      </div>
+      `;
     };
 
     // create the html for interns
     const generateIntern = intern => {
         return `
          
-          <div class="card m-4 bg-primary" style="width: 19rem;" >
+          <div class="row">
+          <div class="card m-4 bg-primary" style="width: 18rem;" >
           <div class="card-body">
-            <i class="fa-solid fa-user-graduate fa-lg"></i>
-            <h5 class="card-title">${intern.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
-          </div>
-              <ul class="list-group list-group-flush">
+            <h3 class="card-title">${intern.getName()}</h3>
+            <h4 class="card-subtitle"><i class="fa-solid fa-user-graduate fa-lg"></i> ${intern.getRole()}</h4>
+                <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${intern.getId()}</li>
                 <li class="list-group-item">Email:${intern.getEmail()}
-                <a href="mailto:email@example.com?subject=Mail from our Website"></a>
+                <a href="mailto:email@example.com?subject=Mail from our Website">Send Email</a>
                 </li>
                 <li class="list-group-item">School: ${intern.getSchool()}</li>
-              </ul>
+                </ul>
           </div>
-        `;
+        </div>
+      `;
     };
 
     // Use the team array to generate pieces of html based on the employee role
@@ -122,7 +118,7 @@ module.exports = team => {
     <body>
         
         <!-- card for each employee in the Team -->
-    ${generateTeam(team)}
+        ${generateTeam(team)}
     </body>
     </html>
     
