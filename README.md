@@ -8,7 +8,7 @@ A Node.js CLI that takes information about a software engineering team and gener
   
   ## Demo Video
   
-[Demo Video Oct 28, 2022 11_22 PM.webm](https://user-images.githubusercontent.com/109435666/218125371-3f08744f-e268-4d4e-a8a6-7fb24fc37ef1.webm)
+[Demo Video Oct 28, 2022 11_22 PM.webm](https://drive.google.com/file/d/14OHu0KzlWDQwEc5Ev9n9PLR9Rd1SQNl9/view?usp=sharing)
 
   ## Screenshots
   
