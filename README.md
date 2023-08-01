@@ -1,12 +1,30 @@
 # oop-team-profile-generator
 A Node.js CLI that takes information about a software engineering team and generates an HTML webpage
 
-  ![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
+Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
-  ## Description 
-  This application will generate html page that displays an employee information in command line
-  
-  ## Demo Video
+Because this Challenge will require the use of the Inquirer package, ensure that you install and use Inquirer version 8.2.4. To do so, use the following command in your project folder: npm i inquirer@8.2.4.
+
+Testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
+
+This application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video and add it to the README of your project.
+
+## Note
+
+There is no starter code for this assignment.
+
+## Important
+
+In order to install `` inquirer ``, please use ``npm i inquirer@8.2.4.``
+
+
+## Description 
+
+This application will generate html page that displays an employee information in command line
+
+![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
+
+## Demo Video
   
 [Demo Video Oct 28, 2022 11_22 PM.webm](https://drive.google.com/file/d/14OHu0KzlWDQwEc5Ev9n9PLR9Rd1SQNl9/view?usp=sharing)
 
