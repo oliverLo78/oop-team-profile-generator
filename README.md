@@ -24,12 +24,12 @@ In order to install `` inquirer ``, please use ``npm i inquirer@8.2.4.``
 
 ## User Story
 
-``
-AS A manager
+``AS A manager
 
 I WANT to generate a webpage that displays my team's basic info
 
-SO THAT I have quick access to their emails and GitHub profiles``
+SO THAT I have quick access to their emails and GitHub profiles
+``
 
 ![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
 
